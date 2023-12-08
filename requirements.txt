@@ -1,0 +1,11 @@
+Pillow
+openai
+django-cors-headers
+django-rest-framework
+django
+node.js
+react
+postgres
+pandas
+psycopg2
+Einops

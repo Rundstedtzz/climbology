@@ -16,29 +16,19 @@ Our project aims to collect and curate climbing routes and betas using Kilter-Bo
 
 ### Technical Details
 
-#### Data Source
-- **GPT-4 Simulated Data:** Using GPT-4 models to simulate climbing routes and betas.
-- **Web-Scraped Data:** Sourcing data from platforms like Reddit, Instagram, and the Kilter Board app.
-
 #### Database Structure
-- **Neo4j Graph Database:** Nodes representing holds with properties like type, difficulty, and coordinates. Edges represent movements in a beta.
-- **PostgreSQL Database:** Storing Kilter Board specific data and user information.
+- **Neo4j Graph Database:** Nodes representing holds with properties: type (crimp, jug, sloper, pocket, pinch, foot), depth, coordinates (X & Y), position in route (start, middle, finish), texture, hold_id, size). Edges represent movements in a beta with properties: start_hold_id, end_hold_id, movement type (dead-point, static, dyno, heel hock, toe hock, knee bar), step.
+- **PostgreSQL Database:** Storing Kilter Board holds specific data (refer to kilter_board.csv or Postgresql: create_boardholds table) and user information (Postgresql: acount_profile table).
 
 #### Queries
-- Types of queries include creating, updating, finding, and deleting routes and betas.
+- Please referring to climbology_queries.ipynb and backend django folder -> create folder -> views.py for more details
 
-### Expected Outputs
-- **Neo4j Graph Database:** A robust database schema with core CRUD operation queries.
-- **Data Collection and Curation Pipeline:** A protocol for gathering and verifying climbing data.
-- **User Interface Prototype:** A functioning prototype of the BetaShare app.
-- **Final Project Report:** Comprehensive documentation detailing the project workflow and its impact.
+### Future Directions
+- **Fine-tuning GPT-4:** currently, we are using GPT 3.5 - turbo 1106 for fine-tuning, but in the future we can try GPT 4 or Bard Gemini.
+- **Better UX & UI Design**
+- 
 
-### Planning Details
-- **Fine-tuning GPT:** Strategies for refining the AI model to generate accurate beta descriptions.
-- **UI Development:** Using React and Django for front-end and back-end development.
-- **Neo4j Integration:** Implementing Cypher queries for data manipulation and retrieval.
-
-### Getting Started
+### Getting Started & Demo
 
 To get started with Climbology:
 
@@ -52,7 +42,38 @@ To get started with Climbology:
   ```
 - For the back-end (Django):
   ```
-  cd climbology/backend
   pip install -r requirements.txt
+  cd climbology/backend
   ```
+3. **Running the Application**
+- Start the React front-end:
+  ```
+  npm start
+  ```
+- Run the Django back-end:
+  ```
+  python manage.py runserver
+  ```
+  
+## Resource Links
+
+For further information, see the following resources:
+ 
+- Webscraping
+  - https://medium.com/@jonathanmondaut/scraping-tweets-using-tweepy-and-python-7f368c03fea1
+  - https://developer.twitter.com/en/portal/products/basic
+  - https://towardsdatascience.com/your-guide-to-web-scrape-quora-q-as-92b802f6dd9
+
+- Front-end (React.js)
+  - https://medium.com/@JeffyJeff/a-step-by-step-guide-to-creating-your-own-assistant-chatbot-using-openais-assistant-api-and-react-655391215c3a
+  - https://github.com/OvidijusParsiunas/deep-chat
+  - https://www.w3schools.com/REACT/DEFAULT.ASP
+ 
+- Back-end (Django, OpenAI API)
+  - https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken
+  - https://platform.openai.com/docs/api-reference
+  - https://platform.openai.com/docs/overview
+  - https://www.w3schools.com/django/
+
+
 

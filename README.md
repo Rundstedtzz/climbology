@@ -8,6 +8,17 @@ BetaShare is a community-driven platform designed to enhance the rock climbing e
 ## Project Overview
 Our project aims to collect and curate climbing routes and betas using Kilter-Board app data, social media posts, and other sources. The core of Climbology is a Neo4j graph database that intuitively maps the spatial and logical relationships between climbing holds and moves, and AI technologies (LLMs) fine-tuned on manually annotated betas.
 
+## Why Nosql & Neo4j
+- **Flexibility:** Schema-less: Easily adapts to the variety of beta data—perfect for the evolving complexity of climbing routes and holds.
+- **Scalability:** Horizontal scaling - can distribute data across more machines as load increases, which is essential for a growing global climbing community.
+- **Variety of Data:** NoSQL databases can handle diverse data types—text for route descriptions, images for hold shapes, videos for beta sequences.
+- **Rapid Development:** Agile-friendly - Changes and iterations can be made quickly without overhauling database schema, facilitating faster app updates and feature rollouts.
+- **Data Representation:** Holds are nodes with properties like type and difficulty. Moves are edges with properties defining movement type and sequence order.
+- **Complex Relationships:** Model intricate sequences and alternative paths, reflecting real-life climbing strategies.
+- **Pathfinding Algorithms:** Leverage algorithms like Dijkstra's or A* to calculate the most efficient climbs.
+- **Flexible Schema:** Adapt to new climbing holds and techniques with minimal database changes.
+- **Rich Visualizations:** Use graph visualizations to help climbers intuitively understand and follow betas.
+
 ### Key Features:
 - **Data Collection:** Utilizing manual annotation on Kilter-Board routes and GPT-4 aid to get a comprehensive dataset of climbing routes and betas.
 - **Database Design:** Employing Postgresql to store user information and Kilter-Board holds information and Neo4j for its natural representation of climbing routes and moves.
@@ -46,8 +57,10 @@ https://docs.google.com/presentation/d/1UeBWSRY9gacBYYbxYnEFauSTNqBl0895XU_5K7yt
 To get started with Climbology:
 
 1. **Clone the Repository**
+   
+2. **Set up Docker Container for Neo4j**
 
-2. **Install Dependencies**
+3. **Install Dependencies**
 - For the front-end (React.js):
   ```
   cd climbology/frontend
@@ -58,7 +71,7 @@ To get started with Climbology:
   pip install -r requirements.txt
   cd climbology/backend
   ```
-3. **Running the Application**
+4. **Running the Application**
 - Start the React front-end:
   ```
   npm start

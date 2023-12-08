@@ -24,10 +24,16 @@ Our project aims to collect and curate climbing routes and betas using Kilter-Bo
 - Please referring to climbology_queries.ipynb and backend django folder -> create folder -> views.py for more details
 
 ### Challenges
-- Learning curve for front-end & back-end
+- Learning curve for front-end (React) & back-end (Django)
+- Manual Annotations
+  - different grades of routes that may exceed our capability (could be difficult to annotate V8 routes when our skill is V4)
+  - time consuming (30 min per route on average)
+  - require attempt the routes in-person to get better quality annotation
+ - fine-tuned GPT model could overfit when training data is not large and representative enough for all categories (grade, style, angle, etc.)
 
 ### Future Directions
 - **Fine-tuning GPT-4:** currently, we are using GPT 3.5 - turbo 1106 for fine-tuning, but in the future we can try GPT 4 or Bard Gemini.
+- **GPT-4 vision API:** In the future we could use GPT-4 to annotate pictures, but the current prompts or the model may not be able to do it accurately
 - **Better UX & UI Design**
 - **Consider user skills (height, weight, etc.) when generating beta using AI**
 - **Greater training data with different difficulties, inclines, styles, etc.**

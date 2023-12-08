@@ -63,13 +63,13 @@ To get started with Climbology:
 3. **Install Dependencies**
 - For the front-end (React.js):
   ```
-  cd climbology/frontend
+  cd Climbology-frontend
   npm install
   ```
 - For the back-end (Django):
   ```
   pip install -r requirements.txt
-  cd climbology/backend
+  cd Climbology-backend/climbology
   ```
 4. **Running the Application**
 - Start the React front-end:

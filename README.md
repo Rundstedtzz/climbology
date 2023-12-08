@@ -78,7 +78,7 @@ To get started with Climbology:
   ```
 - Run the Django back-end:
   ```
-  python manage.py runserver
+  python3 manage.py runserver
   ```
   
 ## Resource Links

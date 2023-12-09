@@ -80,6 +80,7 @@ To get started with Climbology:
   ```
   python3 manage.py runserver
   ```
+5. Please contact us if you have any questions (qifeng.sun@vanderbilt.edu or yuning.wu@vanderbilt.edu)
   
 ## Resource Links
 

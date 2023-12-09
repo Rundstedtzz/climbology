@@ -1,0 +1,73 @@
+/* SignIn.css */
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full view height */
+    padding: 1rem;
+  }
+  
+  .signin-form {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .signin-form input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .signin-form button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signin-form .signin-links {
+    margin-top: 1rem;
+  }
+  
+  .signin-form .signin-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+
+  .signin-logo {
+    height: 125px; /* Or any other size that suits your design */
+    margin-bottom: 1rem; /* Adds some space below the logo */
+  }
+  
+  /* If you have specific styles for the logo and the text, you might want to wrap them in a container for better alignment: */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack logo and text vertically */
+  }
+
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+  max-width: calc(100% - 2rem); /* 100% of the container width minus total horizontal padding */
+  padding: 0.5rem; /* Comfortable padding inside the textboxes */
+  margin: 0.5rem 0; /* Margin for spacing between the inputs */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+  
+  /* Add other styles as needed */
+  

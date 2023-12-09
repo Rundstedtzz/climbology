@@ -1,0 +1,78 @@
+.kilter-board {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* height: 80%;  */
+    /* width: auto;  */
+  }
+  
+  .kilterBoardContainer {
+      position: relative;
+  }
+  
+  /* .circle {
+      position: absolute;
+      width: 20px; 
+      height: 20px; 
+      border-radius: 50%;
+      background-color: red; 
+      transform: translate(-50%, -50%);
+  } */
+  
+  .circle {
+      position: absolute;
+      width: 30px; /* Increased size */
+      height: 30px; /* Increased size */
+      border-radius: 50%;
+      border: 3px solid red; /* Red border */
+      background-color: transparent; /* No fill */
+      transform: translate(-50%, -50%);
+  }
+  
+  .dropdown-menu {
+      position: absolute;
+      /* Style as needed */
+  }
+  
+  .hold-info {
+      margin-top: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+  }
+  
+  .hold-details{
+      margin-top: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+  }
+  
+  .buttonx {
+    height: 30px; /* Larger height for better visibility */
+    width: 150px; /* Define a specific width */
+    margin-top: 20px; /* Add space between buttons */
+    padding: 10px; /* Larger padding for bigger button */
+    border: none; /* Remove border */
+    background-color: #eaab0c; /* Add color */
+    color: rgb(39, 11, 151); /* Text color */
+    font-size: 16px; /* Larger font size */
+    cursor: pointer; /* Cursor effect to show it's clickable */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  }
+
+.buttonx-container {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    margin-left: 100px; /* Add some space between the image and the buttons */
+    height: fit-content; /* Fit the height to its content */
+  }
+  
+.buttonx:hover, .buttonx:focus {
+    background-color: #e1d010; /* Darker shade on hover/focus */
+    transform: translateY(-2px); /* Slight raise effect */
+    outline: none; /* Remove focus outline */
+  }

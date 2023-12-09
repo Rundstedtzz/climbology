@@ -1,0 +1,18 @@
+.about-us-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f3f3f3; /* Light grey background */
+    border-radius: 8px;
+    font-size: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-container h1 {
+    color: #333; /* Dark grey text for the heading */
+    margin-bottom: 15px;
+  }
+  
+  .about-us-container p {
+    color: #663737; /* Lighter text for the paragraphs */
+    line-height: 1.6;
+  }  

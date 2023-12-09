@@ -1,0 +1,29 @@
+.our-team-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fffbea; /* Light yellow background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .our-team-container h1 {
+    color: #333; /* Dark text for the heading */
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .our-team-container .team-member {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .our-team-container .team-member h2 {
+    color: #555; /* Slightly lighter text for team member names */
+    margin-bottom: 5px;
+  }
+  
+  .our-team-container .team-member p {
+    color: #666; /* Light grey text for descriptions */
+    line-height: 1.6;
+  }
+  

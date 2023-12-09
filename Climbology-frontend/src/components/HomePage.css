@@ -1,0 +1,18 @@
+.home-page {
+    text-align: center;
+    margin: 20px auto; /* Centers the content with automatic horizontal margins */
+  }
+  
+.home-page h1 {
+    font-size: 8rem; /* Large size for main heading */
+    color: #333; /* Darker color for contrast */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* White glow effect for readability */
+    font-weight: bold; /* Bold text for impact */
+  }
+  
+  .content-area {
+    background-color: transparent; /* Transparent background */
+    padding: 20px;
+    margin-top: 20px; /* Space between header and content area */
+  }
+  

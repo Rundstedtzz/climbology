@@ -1,0 +1,19 @@
+.kilter-board-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: #e6f7ff; /* Light blue background */
+    border-radius: 8px;
+    font-size: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kilter-board-container h1 {
+    color: #204056; /* Darker blue for the heading */
+    margin-bottom: 15px;
+  }
+  
+  .kilter-board-container p {
+    color: #56478c; /* Grey-blue text for the paragraphs */
+    line-height: 1.6;
+  }
+  

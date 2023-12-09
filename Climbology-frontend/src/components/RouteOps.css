@@ -1,0 +1,96 @@
+/* RouteOps.css */
+
+/* Add a global semi-transparent overlay */
+.routeops-container .kilterBoardContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+    z-index: 0;
+  }
+  
+  /* Style the headings and text for better visibility */
+  .routeops-container h1 {
+    color: #ddeee7; /* Light color for the text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Dark shadow makes text readable */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Improve the form elements' appearance */
+  .routeops-container select, .routeops-container input, .routeops-container button {
+    background-color: #ffffff; /* White background for form elements */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 0.5rem 0; /* Space between form elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+/* Style the buttons within the routeops-container */
+.routeops-container button {
+    background-color: #4a90e2; /* Changed to a soft blue color */
+    color: #ffffff; /* White text color for contrast */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 0.5rem 0; /* Space between form elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border: none; /* Remove the border */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for interaction */
+  }
+  
+  .routeops-container button:hover {
+    background-color: #357abd; /* Darker shade of blue for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover for a "lifting" effect */
+  }
+  
+  /* Add responsiveness to layout */
+  @media (max-width: 768px) {
+    .kilterBoardContainer {
+      flex-direction: column;
+    }
+  
+    .routeops-container .kilterBoardContainer::before {
+      background: rgba(0, 0, 0, 0.7); /* Increase opacity for smaller screens */
+    }
+  }
+  
+  /* Additional styles for aesthetics */
+  .routeops-container .kilterBoardContainer {
+    padding: 2rem; /* Add padding around the content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  /* Adjust the form layout for a cleaner look */
+  .routeops-container .form-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for form sections */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Utilize grid or flexbox for better alignment */
+  .routeops-container .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adaptive grid layout */
+    gap: 1rem;
+  }
+
+  .routeops-container .form-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Make form background more opaque */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Utilize grid or flexbox for better alignment */
+  .routeops-container .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adaptive grid layout */
+    gap: 1rem;
+  }

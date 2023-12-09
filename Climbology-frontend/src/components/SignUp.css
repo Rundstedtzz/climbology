@@ -1,0 +1,80 @@
+/* SignUp.css */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  background: url('/public/background.png') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 700px; /* Increased max width for better spacing */
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Assuming the first input is the 'Sign Up' heading */
+.signup-form input:first-child {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Adjust the flex-basis for a 2-3 input per row layout */
+.signup-form input,
+.signup-form select {
+  flex: 1 1 30%; /* This will allow for approximately 3 items per row */
+  padding: 0.8rem;
+  margin: 0.4rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for the button to take full width */
+.signup-form button {
+  flex-basis: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #005a9c; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Full-width for links below the form */
+.signup-form .signup-links {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.signup-form .signup-links a {
+  color: #005a9c; /* Link color */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .signup-form input,
+  .signup-form select {
+    flex-basis: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* You can further adjust the margin and padding as needed to fit the design */
+

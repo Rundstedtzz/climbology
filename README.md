@@ -55,12 +55,13 @@ https://docs.google.com/presentation/d/1UeBWSRY9gacBYYbxYnEFauSTNqBl0895XU_5K7yt
 ### Getting Started & Demo
 
 To get started with Climbology:
+1. **Restore backup file in Postgresql (Climbology_backup_v2.sql)**
 
-1. **Clone the Repository**
+2. **Clone the Repository**
    
-2. **Set up Docker Container for Neo4j**
+3. **Set up Docker Container for Neo4j**
 
-3. **Install Dependencies**
+4. **Install Dependencies**
 - For the front-end (React.js):
   ```
   cd Climbology-frontend
@@ -71,7 +72,7 @@ To get started with Climbology:
   pip install -r requirements.txt
   cd Climbology-backend/climbology
   ```
-4. **Running the Application**
+5. **Running the Application**
 - Start the React front-end:
   ```
   npm start
@@ -80,7 +81,7 @@ To get started with Climbology:
   ```
   python3 manage.py runserver
   ```
-5. Please contact us if you have any questions (qifeng.sun@vanderbilt.edu or yuning.wu@vanderbilt.edu)
+6. Please contact us if you have any questions (qifeng.sun@vanderbilt.edu or yuning.wu@vanderbilt.edu)
   
 ## Resource Links
 

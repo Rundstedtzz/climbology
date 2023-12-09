@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-family: 'Comfortaa', cursive;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
+  position: relative; /* Ensures the header is above other content */
+  z-index: 10; /* Higher index to be on top of other elements */
+}
+
+.logo img {
+  height: 120px;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  color: white; /* Ensure logo text is visible on the dark background */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  padding: 0 1rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white; /* Lighter color for better visibility */
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #e1641c;
+  text-decoration: none;
+}
+
+/* Additional styles for other elements in your header */
+
+
+
+  
